@@ -29,6 +29,10 @@
                 read only: displayed to user & submitted with form  
                 disabled: displayed to user but not submitted with form
             )
+    dropdown: <select>: container of dropdown
+              <optgroup>: label of group of option
+              <option>: to provide option
+
         -->
 
     
@@ -45,7 +49,7 @@
                 <input type="submit" style="margin: auto; display: flex;"> <br/> <br/>
                 <input type="reset" style="margin: auto; display: flex;"> <br/><br/>
 
-                <input type="date">DOB <br/><br/>
+                <input type="date">DOB  <br/><br/>
                 <input type="color">select color <br/><br/>
                 <input type="file" accept=".jpg" multiple> attach CV <br/><br/>
                 <input type="search"> search here <br/><br/>
@@ -76,13 +80,33 @@
 
                     <label><input type="color">select color</label><br><br>
                 
-                <textarea rows="20" cols="20">address</textarea>
-            </fieldset>
+                <textarea rows="10" cols="50">address</textarea><br><br>
 
-           
+                <select>
+                    <option>ahmedabad</option>
+                    <option>gandhinagar</option>
+                    <option>surat</option>
+                </select>
 
+
+                <select>
+                    <option selected disabled hidden> --select city</option>
+                    <optgroup label="Gujarat">
+                        <option>ahmedabad</option>
+                        <option>gandhinagar</option>
+                    </optgroup>
+
+                    <optgroup label="maharastra"></optgroup>
+                        <option>mumbai</option>
+                        <option>pune</option>
+                    </optgroup>
+                </select>
+            </fieldset>         
+            
+            
         </form>
         
+
 
 </body>
 </html>
