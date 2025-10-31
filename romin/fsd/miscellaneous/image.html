@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Background Properties Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .background-demo {
+      height: 100vh;
+      padding: 50px;
+      color: white;
+      background-color: #4a90e2; /* background-color */
+      background-image: url("D:/romin/fsd/animation.gif"); /* background-image */
+      background-repeat: no-repeat; /* background-repeat */
+      background-position: center top; /* background-position */
+      background-size: cover; /* background-size */
+      background-attachment: fixed; /* background-attachment */
+      background-clip: border-box; /* background-clip */
+    }
+
+    .shorthand-example {
+      height: 300px;
+      margin-top: 20px;
+      padding: 20px;
+      color: black;
+      background: pink url("https://via.placeholder.com/400x300") no-repeat top right / contain fixed;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-demo">
+    <h1>CSS Background Properties</h1>
+    <p>This section uses individual background properties to style the background.</p>
+  </div>
+
+  <div class="shorthand-example">
+    <h2>Shorthand Background Example</h2>
+    <p>This box uses the shorthand <code>background</code> property to combine multiple settings.</p>
+  </div>
+</body>
+</html>
