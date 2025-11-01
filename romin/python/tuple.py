@@ -108,3 +108,9 @@ a,b,c, = t8
 
 
 # wap to encrypt msg as per given shift key(pb question)
+s = input('enter string: ')
+shift = int(input('enter shift: '))
+s1 = ' '
+for i in range(shift):
+    s1 += s[i::shift]
+print(s1)
