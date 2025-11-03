@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p::first-line{
+            color: red;
+            font-weight: bold;
+        }
+
+        h1::first-letter{
+            font-size: 50px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        p::before{
+            content: "Note";
+            color: green;
+        }
+
+        h1::after{
+            content: "🤡";
+        }
+
+        p::selection{
+            color: purple;
+            background-color: pink;
+        }
+
+        ul li::marker{
+            color: #8FABD4;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi rerum eos blanditiis molestiae. Ipsa, quos? Temporibus doloremque expedita optio alias. Numquam corporis molestiae nam iusto. A velit possimus aspernatur!</p>
+    <h1>Good Morning</h1>
+
+    <ul>
+        <li>abc</li>
+        <li>pqr</li>
+        <li>def</li>
+    </ul>
+</body>
+</html>

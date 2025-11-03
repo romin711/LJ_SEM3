@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:focus{
+            background-color: lightgray;
+        }
+
+        a:link{color: red;}
+        a:visited{color: green;}
+        a:hover{color: pink;}
+        a:active{color: yellow;}
+        /* div span:nth-child(2){color: violet;} */
+        div span:not(.a1){color: blueviolet;}
+        /* remember the sequence */
+        input:checked+label{color: rgb(255, 145, 0);}
+    </style>
+</head>
+<body>
+    Enter your name:<input type="text"><br>
+    Enter your number<input type="text"><br>
+
+    <a href="https://unacademy.com/" target="_blank">visit unacademy</a><br>
+    <!-- <div>abc <span>Hello</span> par <span>Good Morning</span> def <span>Be Happy</span></div> -->
+    <div>abc <span>Hello </span>par <span class="a1">Good Morning </span>def <span>Be Happy</span></div>
+
+    <input type="checkbox" id="agreed">
+    <label for="agreed">I agree to conditions</label> 
+
+</body>
+</html>
