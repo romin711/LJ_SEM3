@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: repeat(3 , 1fr);
+            gap: 10px;
+        }
+
+        .inner{
+            background-color: steelblue;
+            border: 1px solid blue;
+            margin: 20px;
+
+        }
+
+        .a{
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner a">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+        <div class="inner">7</div>
+        <div class="inner">8</div>
+        <div class="inner">9</div>
+    </div>
+</body>
+</html>
