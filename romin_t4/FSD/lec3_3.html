@@ -7,17 +7,20 @@
 
     <script>
         function  fun() {
-            alert('warning!')
-            document.write('welcome! ')
+            // alert('warning!')
+            // document.write('welcome! ')
 
-            let ans = confirm('do you agree?')
+            // let ans = confirm('do you agree?')
 
-            if(ans == true) {
-                document.write('thank you!')
-            }
-            else {
-                document.write('user disagree')
-            }
+            // if(ans == true) {
+            //     document.write('thank you!')
+            // }
+            // else {
+            //     document.write('user disagree')
+            // }
+
+            let ans = prompt('write name here ' , 'abc')
+            document.write('welcome' + ans)
         }
     </script>
 </head>
@@ -31,6 +34,8 @@
     //     console.log([arr1 , arr2])
     //     console.log([...arr1 , ...arr2])
     //     console.log(...arr1)
+
+
     </script>
 
     <input type="button" value="click" onclick="fun()">
