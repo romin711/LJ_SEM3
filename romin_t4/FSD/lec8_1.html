@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun() {
+            pat = /abc/
+
+            u = document.getElementById('t1').value
+
+            if(pat.test(u)) {
+                document.write('perfect')
+            }
+
+            else {
+                document.write('not perfect')
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="fun()">
+        <input type="text" id="t1">
+        <input type="submit">
+    </form>
+</body>
+</html>
